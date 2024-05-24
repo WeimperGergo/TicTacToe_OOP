@@ -1,0 +1,33 @@
+main{
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+.jatekter{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.jatekter div{
+    aspect-ratio: 1; /* Oldalarány 1:1*/
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 40px;
+    animation-duration: 0.2s;
+    background-color: darkgray;
+    align-items: center;
+    align-content: center;
+}
+
+.jatekter div:hover{
+    animation-duration: 0.4s;
+    opacity: 95%;
+}
+
+.jatekter div:active{
+    animation-duration: 0.2s;
+    opacity: 85%;
+    background-color: rgb(110, 110, 110);   
+}
